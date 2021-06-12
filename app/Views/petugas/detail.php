@@ -128,16 +128,17 @@
 
                 <!-- Pengkondisian -->
                 <!-- Pengaduan Sedang Diverifikasi -->
-                <!-- <?php if ($pengaduan['status'] == 'Pengaduan Sedang Diverifikasi') :  ?>
 
-                        <a href="/tujuan/edit/<?= $pengaduan['id']; ?>" class="btn btn-primary">Ubah Tujuan Pengaduan</a>
-                        <a href="/petugas/edit/<?= $pengaduan['id']; ?>" class="btn btn-warning">Proses Pengaduan</a>
-                </div>
-                <a href="/kirim_email/<?= $pengaduan['id']; ?>" class="btn btn-success">Kirim Email Ke Petugas</a>
 
-                Pengaduan Sedang Diproses
-            <?php elseif ($pengaduan['status'] == 'Pengaduan Sedang Diproses') : ?>
-                <a href="/petugas/edit/<?= $pengaduan['id']; ?>" class="btn btn-warning">Proses Pengaduan</a>
+                <!-- <?php if ($pengaduan['status'] == 'Pengaduan Sedang Diverifikasi') :  ?> <a href="/tujuan/edit/<?= $pengaduan['id']; ?>" class="btn btn-primary">Ubah Tujuan Pengaduan</a>
+                    <a href="/petugas/edit/<?= $pengaduan['id']; ?>" class="btn btn-warning">Proses Pengaduan</a>
+            </div>
+            <a href="/kirim_email/<?= $pengaduan['id']; ?>" class="btn btn-success">Kirim Email Ke Petugas</a> -->
+
+                <!-- Pengaduan Sedang Diproses -->
+
+                <!-- <?php elseif ($pengaduan['status'] == 'Pengaduan Sedang Diproses') : ?>
+                <a href="/petugas/edit/<?= $pengaduan['id']; ?>" class="btn btn-warning">Proses Pengaduan</a> -->
 
                 <!-- Pengaduan Ditolak -->
             <?php elseif ($pengaduan['status'] == 'Pengaduan Ditolak') : ?>
