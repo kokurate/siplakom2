@@ -1,0 +1,13 @@
+<?= $this->extend('layout/petugas_template'); ?>
+
+<?= $this->Section('content'); ?>
+
+<div id="layoutSidenav_content">
+    <main>
+        <div class="container-fluid">
+            <!-- <h1 class="mt-4">Dashboard</h1> -->
+
+
+
+
+            <?= $this->endSection(); ?>
