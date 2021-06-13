@@ -10,7 +10,7 @@ class Register extends BaseController
     public function index()
     {
         $data = [
-            'tittle' => "SIPLAKOM Daftar Petugas"
+            // 'tittle' => "SIPLAKOM Daftar Petugas"
         ];
         return view('auth/register', $data);
     }

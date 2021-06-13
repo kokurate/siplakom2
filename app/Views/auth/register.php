@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title><?= $tittle; ?></title>
+    <title>SIPLAKOM Register</title>
     <!-- Font Icon -->
     <link rel="stylesheet" href="<?= base_url(); ?>/register/fonts/material-icon/css/material-design-iconic-font.min.css">
 
