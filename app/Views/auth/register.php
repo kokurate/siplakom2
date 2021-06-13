@@ -28,35 +28,54 @@
             <div class="container">
                 <div class="signup-content">
                     <div class="signup-form">
-                        <!-- <h2 class="form-title">Sign up</h2> -->
-                        <form method="POST" class="register-form" id="register-form">
-                            <div class="form-group">
+                        <h2 class="form-title"> <?= lang('Auth.register') ?></h2>
+
+                        <?= view('Myth\Auth\Views\_message_block') ?>
+                        <!-- Untuk Menampilkan pesan gagal atau berhasil -->
+
+                        <!-- Awal Form -->
+                        <form action="<?= route_to('register') ?>" method="post" class="register-form" id="register-form">
+                            <?= csrf_field() ?>
+
+                            <!-- <div class="form-group">
                                 <label for="name"><i class="fas fa fa-user"></i></label>
                                 <input type="text" name="name" id="name" placeholder="Nama Lengkap" />
-                            </div>
+                            </div> -->
 
+                            <!-- Username -->
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="name" id="name" placeholder="Username" />
+                                <input type="text" name="name" id="name" class=" <?php if (session('errors.username')) : ?>is-invalid<?php endif ?>" name="username" placeholder="<?= lang('Auth.username') ?>" value="<?= old('username') ?>" />
                             </div>
 
+                            <!-- Email -->
                             <div class="form-group">
                                 <label for="email"><i class="zmdi zmdi-email"></i></label>
-                                <input type="email" name="email" id="email" placeholder="Email" />
+                                <input type="email" name="email" id="email" placeholder="<?= lang('Auth.email') ?>" class=" <?php if (session('errors.email')) : ?>is-invalid<?php endif ?>" value="<?= old('email') ?>" />
                             </div>
+
+                            <!-- Password -->
                             <div class="form-group">
                                 <label for="pass"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="password" name="pass" id="pass" placeholder="Password" />
+                                <input type="password" id="pass" name="password" class="  <?php if (session('errors.password')) : ?>is-invalid<?php endif ?>" placeholder="<?= lang('Auth.password') ?>" autocomplete="off" />
                             </div>
+
+                            <!-- Confirm Password -->
                             <div class="form-group">
                                 <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
-                                <input type="password" name="re_pass" id="re_pass" placeholder="Ulangi Password" />
+                                <input type="password" id="re-pass" name="pass_confirm" class=" <?php if (session('errors.pass_confirm')) : ?>is-invalid<?php endif ?>" placeholder="<?= lang('Auth.repeatPassword') ?>" autocomplete="off" />
                             </div>
 
                             <div class="form-group form-button">
-                                <input type="submit" name="signup" id="signup" class="form-submit" value="Register" />
+                                <!-- <input type="submit" name="signup" id="signup" class="form-submit" value="Register" /> -->
+                                <button type="submit" class="btn btn-primary btn-block"><?= lang('Auth.register') ?></button>
                             </div>
                         </form>
+
+                        <hr>
+
+                        <!-- <p><?= lang('Auth.alreadyRegistered') ?> <a href="<?= route_to('login') ?>"><?= lang('Auth.signIn') ?></a></p> -->
+
                     </div>
                     <div class="signup-image text-center">
                         <h2 class="underline">Registrasi Akun Petugas</h2>
