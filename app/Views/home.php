@@ -69,8 +69,8 @@
             <li class="sidebar-nav-item"><a class="js-scroll-trigger" href="#hero">Home</a></li>
             <li class="sidebar-nav-item"><a class="js-scroll-trigger" href="#about">Tentang</a></li>
             <li class="sidebar-nav-item"><a class="js-scroll-trigger" href="#services">Pelayanan</a></li>
-            <li class="sidebar-nav-item"><a class="js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-            <li class="sidebar-nav-item"><a class="js-scroll-trigger" href="#contact">Contact</a></li>
+            <li class="sidebar-nav-item"><a class="js-scroll-trigger" href="#faq">FAQ</a></li>
+
         </ul>
     </nav>
 
@@ -135,10 +135,10 @@
                                 <h5><strong>#</strong></h5>
                             </th>
                             <!-- <th scope="col">Foto</th> -->
-                            <th scope="col" style="text-align: justify; margin:auto;">
+                            <!-- <th scope="col" style="text-align: justify; margin:auto;">
                                 <h5><strong>Judul Pengaduan</strong></h5>
-                            </th>
-                            <th scope="col" style="text-align: justify; margin:auto;">
+                            </th> -->
+                            <th scope="col" style="text-align: center; margin:auto;">
                                 <h5><strong>
                                         Isi Pengaduan
                                     </strong></h5>
@@ -154,9 +154,10 @@
                         <?php foreach ($pengaduan as $p) : ?>
                             <tr>
                                 <th scope="row"><?= $i++; ?></th>
-                                <td scope="col" style="text-align: justify; margin:auto;"><?= $p['judul_laporan']; ?></td>
-                                <td scope="col" style="text-align: justify; margin:auto;"><?= $p['isi_laporan']; ?></td>
-                                <td scope="col" style="text-align: justify; margin:auto;">
+                                <!-- <td scope="col" style="text-align: justify; margin:auto;"><?= $p['judul_laporan']; ?></td> -->
+
+                                <td scope="col" style="text-align: center; margin:auto;"><?= $p['isi_laporan']; ?></td>
+                                <td scope="col" style="text-align:center; margin:auto;">
                                     <span class="badge badge-info"><?= $p['tujuan_pengaduan']; ?></span>
                                 </td>
 
@@ -303,7 +304,7 @@
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
-                    <h2>Alur Pengaduan</h2>
+                    <h2 class="" style="color: red;">Alur Pengaduan</h2>
                     <h4>Pelayanan</h4>
                 </div>
 
@@ -316,31 +317,31 @@
                     </div>
 
                     <div class="col-lg-4 col-md-6 mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="fas fa-plus-square"></i></span>
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="fas fa-clipboard-list"></i></span>
                         <h4><strong>2. Lengkapi Form</strong></h4>
                         <p>Isi form sesuai tempat yang sudah disediakan dengan data yang benar</p>
                     </div>
 
                     <div class="col-lg-4 col-md-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="fas fa-plus-square"></i></span>
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="fas fa-paper-plane"></i></span>
                         <h4><strong>3. Kirim Pengaduan</strong></h4>
                         <p>Setelah selesai melengkapi form, kirim pengaduan, supaya bisa dicek dan ditanggapi oleh petugas</p>
                     </div>
 
                     <div class="col-lg-4 col-md-6 mt-4" data-aos="zoom-in" data-aos-delay="100">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="fas fa-plus-square"></i></span>
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="fas fa-envelope"></i></span>
                         <h4><strong>4. Cek Email</strong></h4>
                         <p>Setelah selesai mengirim data, harap cek email yang diinputkan didalam form untuk mengambil kode pengaduan. Untuk digunakan untuk mengecek status pengaduan.</p>
                     </div>
 
                     <div class="col-lg-4 col-md-6 mt-4" data-aos="zoom-in" data-aos-delay="200">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="fas fa-plus-square"></i></span>
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="fas fa-clock"></i></span>
                         <h4><strong>5. Tunggu Konfirmasi</strong></h4>
                         <p>Tunggu tanggapan dari petugas. Harap untuk selalu cek email anda. Karena pemberitahuan tentang pengaduan yang anda ajukan akan disampaikan lewat email</p>
                     </div>
 
                     <div class="col-lg-4 col-md-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="fas fa-plus-square"></i></span>
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="fas fa-search"></i></span>
                         <h4><strong>6. Cari Pengaduan</strong></h4>
                         <p>Setelah mendapatkan notifikasi dari email. Cari pengaduan anda dengan menggunakan kode pengaduan anda sebelumnya untuk mengecek detail pengaduan.</p>
                     </div>
@@ -358,52 +359,61 @@
 
                 <div class="section-title">
                     <h2>Frequently Asked Questions</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    <!-- <p>Testing</p> -->
                 </div>
 
                 <div class="faq-list">
                     <ul>
                         <li data-aos="fade-up">
-                            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse" href="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse" href="#faq-list-1">Apa itu SIPLAKOM ? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-1" class="collapse show" data-parent=".faq-list">
                                 <p>
-                                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                                    Seperti yang sudah dijelaskan diatas, SIPLAKOM adalah Sistem Pengaduan Layanan di UPT Pusat Komputer, Universitas Negeri Manado.
                                 </p>
                             </div>
                         </li>
 
                         <li data-aos="fade-up" data-aos-delay="100">
-                            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2" class="collapsed">Bagaimana Proses Pembuatan Pengaduan ? > <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-2" class="collapse" data-parent=".faq-list">
-                                <p>
-                                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                                <p>Seperti yang sudah dijelaskan di bagian Alur Pengaduan, Silahkan baca dan ikuti prosedur yang ada untuk membuat pengaduan
                                 </p>
                             </div>
                         </li>
 
                         <li data-aos="fade-up" data-aos-delay="200">
-                            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">Apakah saya bisa mengubah pengaduan yang saya kirimkan ? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-3" class="collapse" data-parent=".faq-list">
                                 <p>
-                                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                                    Tidak. Laporan yang sudah kalian kirimkan tidak bisa diubah lagi, maka dari itu kalian harus teliti dalam mengisi form
                                 </p>
                             </div>
                         </li>
 
                         <li data-aos="fade-up" data-aos-delay="300">
-                            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4" class="collapsed">Bagaimana jika email yang diinputkan sudah tidak aktif ? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-4" class="collapse" data-parent=".faq-list">
                                 <p>
-                                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
+                                    Anda diharuskan mengisi email yang masih aktif, karena kode pengaduan dan informasi-informasi terkait pengaduan anda akan dikirimkan melalui email
+
                                 </p>
                             </div>
                         </li>
 
                         <li data-aos="fade-up" data-aos-delay="400">
-                            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5" class="collapsed">Apakah pengaduan yang diajukan akan selalu mendapatkan respon ? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-5" class="collapse" data-parent=".faq-list">
                                 <p>
-                                    Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                                    Tentu Saja. Pasti akan selalu mendapatkan respon dari petugas
+                                </p>
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-up" data-aos-delay="500">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-6" class="collapsed">Berapa lama respon atas pengaduan yang diajukan ? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-6" class="collapse" data-parent=".faq-list">
+                                <p>
+                                    Kecepatan respon tergantung dari banyaknya pengaduan yang masuk. Jika pengaduan sudah direspon oleh petugas, maka akan ada di notifikasi email yang kalian tambahkan pada saat membuat pengaduan. Maka dari itu mohon untuk mengisi email yang masih aktif
                                 </p>
                             </div>
                         </li>
@@ -419,32 +429,42 @@
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
-                    <h2>Contact</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    <h2 class="">Contact</h2>
+                    <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
                 </div>
 
 
 
-                <div class="text-center">
+                <div class="" style="text-align:center">
 
-                    <div class="text-center">
+                    <div class="">
                         <div class="info">
-                            <div class="address text-center">
+                            <div class="address ">
 
-                                <h4> <i class="fas fa-location-arrow text-center"></i> Location:</h4>
-                                <p>A108 Adam Street, New York, NY 535022</p>
+                                <h4> <i class="fas fa-location-arrow "></i><br>
+                                    Alamat :</h4>
+                                <p style="font-size: 20px;">Jln. Kampus Unima, Kelurahan Tonsaru, Kecamatan Tondano Selatan</p>
                             </div>
 
-                            <div class="email text-center">
-                                <i class="icofont-envelope text-center"></i>
-                                <h4>Email:</h4>
-                                <p>info@example.com</p>
+                            <hr class=" col-4">
+
+                            <div class="email ">
+
+                                <!-- <i class="icofont-envelope "></i> -->
+                                <h4> <i class="fas fa-envelope "></i><br>
+                                    Email:</h4>
+                                <p style="font-size: 20px;">puskom@unima.ac.id</p>
                             </div>
 
-                            <div class="phone text-center">
-                                <i class="icofont-phone text-center"></i>
-                                <h4>Call:</h4>
-                                <p>+1 5589 55488 55s</p>
+                            <hr class=" col-4">
+
+                            <div class="phone ">
+                                <!-- <i class="icofont-phone "></i> -->
+                                <h4><i class="fas fa-history "></i><br>
+                                    Jam Kerja:</h4>
+                                <p style="font-size: 20px;">Senin-Jumat</p>
+                                <p style="font-size: 20px;">8.30 - 18.30 WITA</p>
+
                             </div>
 
                         </div>
@@ -468,11 +488,11 @@
                     <div class="col-lg-3 col-md-6 footer-contact">
                         <h3>SIPLAKOM</h3>
                         <p>
-                            A108 Adam Street <br>
-                            New York, NY 535022<br>
-                            United States <br><br>
-                            <strong>Phone:</strong> +1 5589 55488 55<br>
-                            <strong>Email:</strong> info@example.com<br>
+                            Jln. Kampus Unima<br>
+                            Kelurahan Tonsaru, Kecamatan <br>
+                            Tondano Selatan <br><br>
+                            <!-- <strong>Phone:</strong> 08<br> -->
+                            <strong>Email:</strong> puskom@unima.ac.id<br>
                         </p>
                     </div>
 
