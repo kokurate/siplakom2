@@ -34,7 +34,7 @@
                         <!-- Untuk Menampilkan pesan gagal atau berhasil -->
 
                         <!-- Awal Form -->
-                        <form action="<?= route_to('auth/register') ?>" method="post" class="register-form" id="register-form">
+                        <form action="<?= route_to('register') ?>" method="post" class="register-form" id="register-form">
                             <?= csrf_field() ?>
 
                             <!-- <div class="form-group">
