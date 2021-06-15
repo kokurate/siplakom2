@@ -34,7 +34,7 @@
                         <!-- Untuk Menampilkan pesan gagal atau berhasil -->
 
                         <!-- Awal Form -->
-                        <form action="<?= route_to('register') ?>" method="post" class="register-form" id="register-form">
+                        <form action="<?= route_to('auth/register') ?>" method="post" class="register-form" id="register-form">
                             <?= csrf_field() ?>
 
                             <!-- <div class="form-group">
@@ -45,7 +45,7 @@
                             <!-- Username -->
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="name" id="name" class=" <?php if (session('errors.username')) : ?>is-invalid<?php endif ?>" name="username" placeholder="<?= lang('Auth.username') ?>" value="<?= old('username') ?>" />
+                                <input type="text" name="username" id="name" class=" <?php if (session('errors.username')) : ?>is-invalid<?php endif ?>" placeholder="<?= lang('Auth.username') ?>" value="<?= old('username') ?>" />
                             </div>
 
                             <!-- Email -->

@@ -48,7 +48,7 @@
                 </div>
 
 
-                <form action="<?= route_to('login') ?>" method="post" class="login100-form validate-form p-b-33 p-t-5">
+                <form action="<?= route_to('auth/login') ?>" method="post" class="login100-form validate-form p-b-33 p-t-5">
                     <?= csrf_field() ?>
 
                     <?php if ($config->validFields === ['email']) : ?>
